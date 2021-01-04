@@ -1,0 +1,36 @@
+/*
+    Importando fonte Roboto
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+/*
+    cores
+*/
+
+$preto: #141414;
+$zerarPropriedade: 0;
+* {
+    padding: $zerarPropriedade;
+    margin: $zerarPropriedade;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#card {
+    margin-top: 10px;
+    padding: $zerarPropriedade;
+    background-color: $preto;
+    color: white;
+    border-radius: 5px;
+}
+
+#card .row .col-md-3 img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
