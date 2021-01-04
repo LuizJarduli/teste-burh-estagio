@@ -15,15 +15,29 @@
         <div class="container h-100 d-flex justify-content-center align-items-center">
             <div id="formulario-busca" class="row d-flex flex-row justify-content-center">
                 <form action="#" method="post" id="buscaForm" name="buscaForm">
-                    <h4>Insira o título do filme</h4>
-                    <div id="controles" class="d-flex flex-row">
+                    <h4 id="titulo">Insira o título do filme</h4>
+                    <div id="controles" class="d-flex flex-row w-100">
                         <input type="text" name="name" id="name" class="form-control" required placeholder="Título">
                         <button class="btn btn-danger" type="submit" name="enviarBusca" id="enviarBusca">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
-
                 </form>
+                <br>
+                <div class="container" id="card">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12">
+                            <img src="./img/testePoster.jpg" alt="Poster" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 col-xs-12 d-flex flex-column justify-content-around">
+                            <h1 id="nome">O Poderoso Chefao</h1><br>
+                            <h1 id="ano">1973</h1><br>
+                            <h1 id="duracao">Duração: 180 min</h1><br>
+                            <h1 id="critica">IMDB: 10</h1><br>
+                            <h1 id="diretor">Diretor: Francis Ford Coppola</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
