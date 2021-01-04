@@ -13,6 +13,7 @@
 
 $preto: #141414;
 $zerarPropriedade: 0;
+$th_size: 35px;
 * {
     padding: $zerarPropriedade;
     margin: $zerarPropriedade;
@@ -28,6 +29,20 @@ body {
     background-color: $preto;
     color: white;
     border-radius: 5px;
+}
+
+#card {
+    .row {
+        .col-md-9 {
+            table {
+                font-size: $th_size;
+                td {
+                    font-size: 25px;
+                    padding-left: 18px;
+                }
+            }
+        }
+    }
 }
 
 #card .row .col-md-3 img {
