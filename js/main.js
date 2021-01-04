@@ -14,7 +14,13 @@ $(document).ready(function() {
                 if (data.Response == "False") {
                     alert("erro 404, filme não encontrado");
                 } else {
-                    console.log(data);
+                    //console.log(data);
+                    $("#poster").attr('src', data.Poster);
+                    $("#titulo").text(data.Title);
+                    $("#estreia").text(data.Year);
+                    $("#duracao").text(data.Runtime);
+                    $("#imdb").text(data.imdbRating);
+                    $("#diretor").text(data.Director);
                 }
             },
             error: function(data) {
