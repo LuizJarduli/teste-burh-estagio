@@ -14,6 +14,7 @@
 $preto: #141414;
 $zerarPropriedade: 0;
 $th_size: 35px;
+$card_height: 382.5px;
 * {
     padding: $zerarPropriedade;
     margin: $zerarPropriedade;
@@ -29,10 +30,17 @@ body {
     background-color: $preto;
     color: white;
     border-radius: 5px;
+    height: $card_height;
 }
 
 #card {
     .row {
+        .col-md-3 {
+            img {
+                height: $card_height;
+                object-fit: cover;
+            }
+        }
         .col-md-9 {
             table {
                 font-size: $th_size;

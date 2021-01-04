@@ -20,6 +20,13 @@ body {
   background-color: #141414;
   color: white;
   border-radius: 5px;
+  height: 382.5px;
+}
+
+#card .row .col-md-3 img {
+  height: 382.5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #card .row .col-md-9 table {
