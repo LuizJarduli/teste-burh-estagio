@@ -13,9 +13,14 @@ body {
 }
 
 #card {
-    border: 1px solid #000;
     margin-top: 10px;
     padding: 0;
     background-color: #141414;
     color: white;
+    border-radius: 5px;
+}
+
+#card .row .col-md-3 img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
