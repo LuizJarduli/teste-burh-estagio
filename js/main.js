@@ -128,7 +128,8 @@ function getUrl() {
     window.location.href = queryString;
 }
 
-// função regex que retorna somente o paramentro da queryString
+//função regex que retorna somente o paramentro da queryString
+//disponível em https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
