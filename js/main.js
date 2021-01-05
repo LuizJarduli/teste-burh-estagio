@@ -12,6 +12,9 @@ $(document).ready(function() {
             url: request,
             success: function(data) {
                 var card = $("#card");
+                $("#imdb2").html("");
+                $("#metacritic").html("");
+                $("#rotten").html("");
                 if (data.Response == "False") {
                     alert("erro 404, filme não encontrado");
                     if (card.is('.ativo')) {
@@ -35,14 +38,24 @@ $(document).ready(function() {
                     $("#sinopse").text(data.Plot);
                     $("#roteiro").text(data.Writer);
                     $("#elenco").text(data.Actors);
-                    $("#rotten").append(
-                        "<img src='./img/rating-icons/certified-fresh-rotten.png' alt='Rotten Tomatoes'>&nbsp;&nbsp;" + data.Ratings[1].Value
-                    );
+                    if (parseInt(data.Ratings[1].Value) > 75 && data.Ratings[1].Source == "Rotten Tomatoes") {
+                        $("#rotten").append(
+                            "<img src='./img/rating-icons/certified-fresh-rotten.png' alt='Imdb rating'>&nbsp;&nbsp;" + data.Ratings[1].Value
+                        );
+                    } else if (parseInt(data.Ratings[1].Value) > 60 && data.Ratings[1].Source == "Rotten Tomatoes") {
+                        $("#rotten").append(
+                            "<img src='./img/rating-icons/fresh-rotten.png' alt='Imdb rating'>&nbsp;&nbsp;" + data.Ratings[1].Value
+                        );
+                    } else if (data.Ratings[1].Source == "Rotten Tomatoes") {
+                        $("#rotten").append(
+                            "<img src='./img/rating-icons/splat-rotten.png' alt='Imdb rating'>&nbsp;&nbsp;" + data.Ratings[1].Value
+                        );
+                    }
                     $("#imdb2").append(
                         "<img src='./img/rating-icons/IMDb-icon.png' alt='Imdb rating'>&nbsp;&nbsp;" + data.imdbRating + "/10"
                     );
                     $("#metacritic").append(
-                        "<img src='./img/rating-icons/Metacritic-icon.png' alt='metacritic rating'>&nbsp;&nbsp;" + data.imdbRating + "/100"
+                        "<img src='./img/rating-icons/Metacritic-icon.png' alt='metacritic rating'>&nbsp;&nbsp;" + data.Metascore + "/100"
                     );
                 }
             },
