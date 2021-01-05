@@ -1,9 +1,8 @@
 // no ato de carregar a pág, passo a queryString como parametro na requisição ajax
 window.onload = function(e) {
-        if (window.location.pathname == "/filme.html") {
+        if (window.location.pathname == "/index.html") {
             var queryString = window.location.search;
             var busca = getParameterByName("title");
-            console.log(window.location);
             var chave = '884b737f';
             var request = "http://www.omdbapi.com/?apikey=" + chave + "&t=" + busca + "&plot=full"; // minha chave da API
             $.ajax({
