@@ -15,6 +15,7 @@ $preto: #141414;
 $zerarPropriedade: 0;
 $th_size: 35px;
 $card_height: 382.5px;
+$padding-left-right: 54px;
 * {
     padding: $zerarPropriedade;
     margin: $zerarPropriedade;
@@ -22,6 +23,7 @@ $card_height: 382.5px;
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 #card {
@@ -64,4 +66,45 @@ body {
 
 .ativo {
     display: block;
+}
+
+.navbar {
+    padding-left: $padding-left-right;
+    padding-right: $padding-left-right;
+    a:hover {
+        cursor: pointer;
+        font-weight: bolder;
+    }
+}
+
+#wrapper {
+    padding-left: $padding-left-right;
+    padding-right: $padding-left-right;
+    background-color: $preto;
+    #ficha-filme {
+        padding: 25px 25px 25px;
+        .col-md-5,
+        .col-sm-12 {
+            img {
+                width: 100%;
+                height: $card_height;
+                object-fit: cover;
+                border-radius: 5px;
+                // border-top-left-radius: 5px;
+                // border-top-right-radius: 5px;
+            }
+        }
+        .col-lg-4 {
+            img {
+                object-fit: cover;
+                height: $card_height;
+            }
+        }
+        .col-xl-4 {
+            img {
+                object-fit: cover;
+                height: $card_height*1.5;
+            }
+        }
+    }
 }
