@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+.text-p {
+  color: #8a8d98;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
@@ -96,7 +100,7 @@ body {
 
 #wrapper #ficha-filme .col-md-6 #infos1 table tr td,
 #wrapper #ficha-filme .col-sm-12 #infos1 table tr td {
-  color: #6c757d;
+  color: #8a8d98;
   font-weight: bold;
 }
 

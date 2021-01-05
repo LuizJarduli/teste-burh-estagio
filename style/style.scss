@@ -16,9 +16,14 @@ $zerarPropriedade: 0;
 $th_size: 35px;
 $card_height: 382.5px;
 $padding-left-right: 54px;
+$p_color: #8a8d98;
 * {
     padding: $zerarPropriedade;
     margin: $zerarPropriedade;
+}
+
+.text-p {
+    color: $p_color;
 }
 
 body {
@@ -106,7 +111,7 @@ body {
                             padding: 10px;
                         }
                         td {
-                            color: $secondary;
+                            color: $p_color;
                             font-weight: bold;
                         }
                     }
