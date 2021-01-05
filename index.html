@@ -11,19 +11,25 @@
 </head>
 
 <body>
+    <!-- div wrapper -->
     <div class="container-fluid mw-100 vh-100">
+        <!-- div main, onde vai o conteudo da pág -->
         <div class="container h-100 d-flex justify-content-center align-items-center">
+            <!-- div do formulário de busca e da div resultado -->
             <div id="formulario-busca" class="row d-flex flex-row justify-content-center w-100">
+                <!-- formulário de busca -->
                 <form action="#" method="post" id="buscaForm" name="buscaForm" class="w-75 d-flex flex-column align-items-center">
                     <h4 id="labelForm">Insira o título do filme</h4>
                     <div id="controles" class="d-flex flex-row w-100">
-                        <input type="text" name="name" id="name" class="form-control" required placeholder="Título">
+                        <input type="text" name="name" id="name" class="form-control" required placeholder="Título...">
+                        <input type="hidden" name="pag_detalhes">
                         <button class="btn btn-info" type="submit" name="enviarBusca" id="enviarBusca">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </form>
                 <br>
+                <!-- div container do resultado da requisição feita na API -->
                 <div class="container hidden" id="card">
                     <div class="row">
                         <div class="col-md-3 col-xs-12">
@@ -33,30 +39,29 @@
                             <table>
                                 <tr>
                                     <th>Título</th>
-                                    <td id="titulo">Poderoso Chefão</td>
+                                    <td id="titulo"></td>
                                 </tr>
                                 <tr>
                                     <th>Estréia</th>
-                                    <td id="estreia">1973</td>
+                                    <td id="estreia"></td>
                                 </tr>
                                 <tr>
                                     <th>Duração</th>
-                                    <td id="duracao">181 min</td>
+                                    <td id="duracao"></td>
                                 </tr>
                                 <tr>
                                     <th>IMDB</th>
-                                    <td id="imdb">10</td>
+                                    <td id="imdb"></td>
                                 </tr>
                                 <tr>
                                     <th>Diretor</th>
-                                    <td id="diretor">Francis Ford Coppola</td>
+                                    <td id="diretor"></td>
                                 </tr>
                             </table><br>
                             <div class="d-flex flex-row justify-content-around">
                                 <a href="#" id="detalhes" class="btn btn-success p-3"><i class="fas fa-plus"></i>&nbsp;Detalhes</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
