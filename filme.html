@@ -11,15 +11,39 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-dark justify-content-between">
-        <a class="navbar-brand text-white">Teste prático</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Título..." aria-label="Search">
+    <!-- navbar contendo tambem uma busca e retorno para index -->
+    <nav class="navbar sticky-top navbar-light bg-dark justify-content-between">
+        <a class="navbar-brand text-white" href="./index.html">Home</a>
+        <form class="form-inline" id="buscaForm">
+            <input class="form-control mr-sm-2" type="search" placeholder="Título..." name="name" id="name" aria-label="Search">
             <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
         </form>
     </nav>
+    <!-- container wrapper  -->
+    <div class="container-fluid vw-100 h-auto m-0" id="wrapper">
+        <!-- div contendo a ficha tecnica com todas as informações vindas da API sobre o filme -->
+        <div class="container-fluid w-100" id="ficha-filme">
+            <div class="row m-0 p-0">
+                <div class="col-md-6 col-xs-12 col-sm-12 col-lg-5 col-xl-4">
+                    <img src="./img/testePoster.jpg" alt="Poster" id="poster">
+                    <div id="acoes">
+
+                    </div>
+                    <hr class="bg-info">
+                    <div id="infos1">
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-12 col-lg-7 col-xs-12">
+                    <h2 class="text-white font-weight-bold" id="titulo">The Godfather</h2>
+                    <h2 id="estreia" class="text-secondary">(1972)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js" type="text/javascript"></script>
 
 </html>
