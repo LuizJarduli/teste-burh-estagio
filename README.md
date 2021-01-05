@@ -43,5 +43,5 @@ A página de detalhes da requisição (_filme.html_) feita na API foi inspirada 
 A ideia foi usar query String em javascript para conseguir pegar valores passados em GET pelo formulário inicial, e com isso não utilizar back-end na aplicação, mantendo o objetivo inicial do teste.
 
 usando uma funçao no _onload_ da pág _filme.html_ foi possível, através de uma função auxiliar de parsing, recuperar a _query String_ e assim fazer uma requisição AJAX ao entrar nela.
-![função onload](./docs/git_repo_imgs/img4.png)
+
 
