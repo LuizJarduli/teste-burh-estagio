@@ -57,6 +57,11 @@ $(document).ready(function() {
                     $("#metacritic").append(
                         "<img src='./img/rating-icons/Metacritic-icon.png' alt='metacritic rating'>&nbsp;&nbsp;" + data.Metascore + "/100"
                     );
+                    $("#bilheteria").text(data.BoxOffice);
+                    $("#premios").text(data.Awards);
+                    $("#paises").text(data.Country);
+                    $("#idiomas").text(data.Language);
+                    $("#producao").text(data.Production);
                 }
             },
             error: function(data) {
