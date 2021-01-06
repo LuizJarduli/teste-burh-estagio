@@ -66,6 +66,12 @@ body {
   font-weight: bolder;
 }
 
+#resposta {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #6c757d;
+}
+
 #wrapper {
   padding-left: 54px;
   padding-right: 54px;

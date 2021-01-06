@@ -82,6 +82,12 @@ body {
     }
 }
 
+#resposta {
+    font-size: 40px;
+    font-weight: bolder;
+    color: $secondary;
+}
+
 #wrapper {
     padding-left: $padding-left-right;
     padding-right: $padding-left-right;
