@@ -22,7 +22,7 @@
     <!-- container wrapper  -->
     <div class="container-fluid vw-100 h-auto m-0" id="wrapper">
         <!-- div contendo a ficha tecnica com todas as informações vindas da API sobre o filme -->
-        <div class="container-fluid w-100" id="ficha-filme">
+        <div class="container-fluid w-100 hidden" id="ficha-filme">
             <div class="row m-0 p-0">
                 <div class="col-md-6 col-xs-12 col-sm-12 col-lg-5 col-xl-4">
                     <img src="" alt="Poster" id="poster">
@@ -96,6 +96,33 @@
                             <p id="producao" class="text-p h4"></p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- em caso de queryString inválida, esse bloco será utilizado -->
+    <div class="text-center font-weight-bold text-secondary ativo" id="result-empty">
+        <h1>Desculpe :(</h1>
+        <h1>Erro: 404</h1>
+        <h2>Não tem nada aqui....</h2>
+    </div>
+
+    <!-- modal de alerta caso não seja encontrado nenhum filme no formulário de busca-->
+    <div class="modal fade text-center" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Atenção</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="resposta">404</p>
+                    <p class="text-secondary">Filme não encontrado</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
                 </div>
             </div>
         </div>
