@@ -1,6 +1,6 @@
 // no ato de carregar a pág, passo a queryString como parametro na requisição ajax
 window.onload = function(e) {
-        if (window.location.pathname == "/index.html") {
+        if (window.location.pathname == "/filme.html") {
             var queryString = window.location.search;
             var busca = getParameterByName("title");
             var chave = '884b737f';
