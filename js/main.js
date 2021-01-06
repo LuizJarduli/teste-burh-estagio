@@ -95,7 +95,7 @@ $(document).ready(function() {
             success: function(data) {
                 var card = $("#card");
                 if (data.Response == "False") {
-                    alert("erro 404, filme não encontrado");
+                    $('#myModal').modal({ show: true });
                     if (card.is('.ativo')) {
                         card.removeClass('ativo');
                         card.addClass('hidden');
