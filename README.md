@@ -2,6 +2,8 @@
 
 Teste prático para oportunidade de estágio na BURH (instruções em docs/instrucoes/README.md).
 
+Link perfil : <https://burh.com.br/luizleite14>
+
 clone o repositório de : 
 
 ## `git@github.com:LuizJarduli/teste-burh-estagio.git`
