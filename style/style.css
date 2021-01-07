@@ -172,6 +172,19 @@ body {
   background-color: #141414;
 }
 
+@media screen and (max-width: 576px) {
+  #wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper {
+    width: 90%;
+  }
+}
+
 #wrapper #ficha-filme {
   padding: 25px 25px 25px;
 }
@@ -225,5 +238,23 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   height: 573.75px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #navbarTogglerDemo01 #buscaForm {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar #navbarTogglerDemo01 #buscaForm #name {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar #navbarTogglerDemo01 #buscaForm #name {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

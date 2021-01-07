@@ -166,6 +166,13 @@ body {
     padding-left: $padding-left-right;
     padding-right: $padding-left-right;
     background-color: $preto;
+    @include screen-min($screen-sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include screen-min($screen-md) {
+        width: 90%;
+    }
     #ficha-filme {
         padding: 25px 25px 25px;
         .col-md-6,
@@ -219,6 +226,24 @@ body {
             img {
                 object-fit: cover;
                 height: $card_height*1.5;
+            }
+        }
+    }
+}
+
+.navbar {
+    #navbarTogglerDemo01 {
+        #buscaForm {
+            @include screen-min($screen-md) {
+                padding-top: 15px;
+            }
+            #name {
+                @include screen-min($screen-md) {
+                    width: 90%;
+                }
+                @include screen-min($screen-sm) {
+                    width: 80%;
+                }
             }
         }
     }
