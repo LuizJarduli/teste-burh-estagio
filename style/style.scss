@@ -14,9 +14,19 @@
 $preto: #141414;
 $zerarPropriedade: 0;
 $th_size: 35px;
+$th_size_sm: 20px;
 $card_height: 382.5px;
 $padding-left-right: 54px;
 $p_color: #8a8d98;
+$screen-sm: 576px;
+$screen-md: 768px;
+@mixin screen-min($screen-sm) {
+    @media screen and (max-width: $screen-sm) {
+        @content
+    }
+}
+
+;
 * {
     padding: $zerarPropriedade;
     margin: $zerarPropriedade;
@@ -31,6 +41,12 @@ body {
     overflow-x: hidden;
 }
 
+#buscaForm.w-75 {
+    @include screen-min($screen-sm) {
+        width: 100% !important;
+    }
+}
+
 #card {
     margin-top: 10px;
     padding: $zerarPropriedade;
@@ -38,14 +54,24 @@ body {
     color: white;
     border-radius: 5px;
     height: $card_height;
+    @include screen-min($screen-sm) {
+        height: auto;
+    }
 }
 
 #card {
+    @include screen-min($screen-sm) {
+        padding-bottom: 10px;
+    }
     .row {
         .col-md-3 {
             img {
                 height: $card_height;
                 object-fit: cover;
+                @include screen-min($screen-sm) {
+                    width: 100%;
+                    height: 250px;
+                }
             }
         }
         .col-md-9 {
@@ -54,6 +80,30 @@ body {
                 td {
                     font-size: 25px;
                     padding-left: 18px;
+                }
+            }
+        }
+        .col-xs-12 {
+            table {
+                @include screen-min($screen-sm) {
+                    font-size: $th_size_sm;
+                    border-top: 2px solid #8a8d98;
+                }
+                th {
+                    @include screen-min($screen-sm) {
+                        padding: 10px;
+                    }
+                }
+                td {
+                    @include screen-min($screen-sm) {
+                        font-size: 13px;
+                        padding: 5px;
+                    }
+                }
+            }
+            #detalhes {
+                @include screen-min($screen-sm) {
+                    padding: 8px !important;
                 }
             }
         }
