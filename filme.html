@@ -12,12 +12,17 @@
 
 <body>
     <!-- navbar contendo tambem uma busca e retorno para index -->
-    <nav class="navbar sticky-top navbar-light bg-dark justify-content-between">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-dark justify-content-between">
         <a class="navbar-brand text-white" href="./index.html">Home</a>
-        <form class="form-inline" id="buscaForm">
-            <input class="form-control mr-sm-2" type="search" placeholder="Título..." name="name" id="name" aria-label="Search">
-            <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+            <form class="form-inline" id="buscaForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Título..." name="name" id="name" aria-label="Search">
+                <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
     </nav>
     <!-- container wrapper  -->
     <div class="container-fluid vw-100 h-auto m-0" id="wrapper">
@@ -57,7 +62,7 @@
                     <h2 class="text-white font-weight-bold" id="titulo">The Godfather</h2>
                     <h2 id="estreia" class="text-p">(1972)</h2>
                     <div class="row m-0 p-0">
-                        <div class="col-md-12 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-12  col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Sinopse</h2><br>
                             <p id="sinopse" class="text-p"></p>
                         </div>
@@ -69,29 +74,29 @@
                             <h2 class="font-weight-bold">Elenco</h2><br>
                             <p id="elenco" class="text-p"></p>
                         </div>
-                        <div class="col-md-4 col-xs-12 m-0 p-0 mt-3 text-secondary" id="avaliacoes">
+                        <div class="col-md-12 col-lg-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-secondary" id="avaliacoes">
                             <h2 class="font-weight-bold text-white">Avaliações</h2><br>
                             <h3 id="rotten"></h3>
                             <h3 id="imdb2"></h3>
                             <h3 id="metacritic"></h3>
                         </div>
-                        <div class="col-md-4 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-12 col-lg-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Bilheteria</h2><br>
                             <p id="bilheteria" class="text-p h3"></p>
                         </div>
-                        <div class="col-md-4 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Prêmios</h2><br>
                             <p id="premios" class="text-p"></p>
                         </div>
-                        <div class="col-md-6 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Países onde foi filmado</h2><br>
                             <p id="paises" class="text-p"></p>
                         </div>
-                        <div class="col-md-6 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Idiomas</h2><br>
                             <p id="idiomas" class="text-p"></p>
                         </div>
-                        <div class="col-md-6 col-xs-12 m-0 p-0 mt-3 text-white">
+                        <div class="col-md-6 col-xl-4 col-xs-12 m-0 p-0 mt-3 text-white">
                             <h2 class="font-weight-bold">Produção</h2><br>
                             <p id="producao" class="text-p h4"></p>
                         </div>
