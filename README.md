@@ -4,9 +4,7 @@ Teste prático para oportunidade de estágio na BURH (instruções em docs/instr
 
 Link perfil : <https://burh.com.br/luizleite14>
 
-## Você pode testá-lo live!!
-
-[teste-burh-estagio](https://teste-burh-estagio.web.app/)
+## Você pode testá-lo live!! [teste-burh-estagio](https://teste-burh-estagio.web.app/)
 
 ## OU
 
