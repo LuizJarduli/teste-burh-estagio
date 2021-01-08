@@ -89,7 +89,8 @@ function FetchMovie(busca) {
 }
 // no ato de carregar a pág, passo a queryString como parametro na requisição ajax
 window.onload = function(e) {
-        if (window.location.pathname == "/filme.html") {
+        var busca = window.location.pathname.split("/");
+        if (busca.lastIndexOf("filme.html") != -1) {
             FetchMovie(getParameterByName('title'));
         }
 
