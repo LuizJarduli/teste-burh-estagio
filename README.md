@@ -4,9 +4,12 @@ Teste prático para oportunidade de estágio na BURH (instruções em docs/instr
 
 Link perfil : <https://burh.com.br/luizleite14>
 
-clone o repositório de : 
+clone o repositório: 
 
-## `git@github.com:LuizJarduli/teste-burh-estagio.git`
+## `git clone git@github.com:LuizJarduli/teste-burh-estagio.git`
+
+execute o comando abaixo no terminal dentro do repositório clonado
+## `npm install` 
 
 Abra o arquivo _index.html_ e pronto, já está na aplicação.
 
